@@ -6,3 +6,4 @@ pytest-cov
 click
 sqlalchemy
 psycopg2
+json
