@@ -60,10 +60,10 @@ def transform_to_Dataframe(read_file):
 ##################################################################################################
 #################################### DATA MANIPULATION ###########################################
 ##################################################################################################
-######### MISSING VALUES MANAGEMENT
-# Optional function to drop features with missing values
-# that takes as input the dataframe and a threshold value
-# from 0% to 100%
+
+################################# MISSING VALUES MANAGEMENT ######################################
+# Optional function to drop features with missing values that takes as input the dataframe and
+# a threshold value from 0% to 100%
 def columns_with_missing_values(dataf, threshold):
     l = []
     l = list(
@@ -80,51 +80,62 @@ def columns_with_missing_values(dataf, threshold):
     )
     print("Dropped columns:", list(set(list((dataf.columns.values))) - set(l)))
     return l
-"""
-features = columns_with_missing_values(df, 50)
-df100 = df[features]
 
-"""
-########## DATA FORMATING (DATE)
+def drop_columns_with_missing_values(df, threshold):
+    remaining_columns = columns_with_missing_values(df, threshold)
+    non_nan_df = df[remaining_columns]
+    non_nan_df = pd.DataFrame(non_nan_df)
+    print("Shape of the reduced dataframe", non_nan_df.shape)
+    return non_nan_df
+
+
+################################ FORMATING DATE FEATURE ########################################
 def format_date_features(data_frame, date_features):
     features = date_features
     for feature in features:
-        data_frame[feature] = pd.to_datetime(data_frame[feature], unit='s')
+        data_frame[feature] = pd.to_datetime(data_frame[feature], unit="s")
+    print("Date feature formated in human readable format.")
     return data_frame
 
-def split_date_feature(df, date_features):
+
+################################ SPLITTING DATE FEATURE ########################################
+def split_date_feature(data_frame, date_features):
     for feature in date_features:
-        df[feature] = pd.to_datetime(df[feature])
-        df['day',feature] = df[feature].dt.day
-        df['month',feature] = df[feature].dt.month
-        df['year',feature] = df[feature].dt.year
-        df = pd.DataFrame(df)
-        df.drop([feature],inplace=True,axis=1)
-    return df
+        data_frame[feature] = pd.to_datetime(data_frame[feature])
+        data_frame["day", feature] = data_frame[feature].dt.day
+        data_frame["month", feature] = data_frame[feature].dt.month
+        data_frame["year", feature] = data_frame[feature].dt.year
+        data_frame = pd.DataFrame(data_frame)
+        data_frame.drop([feature], inplace=True, axis=1)
+    print("Date features split into day, month, year features.")
+    return data_frame
 
 
-########## DATA FORMATING (INTEGER, STRING, FLOAT))
-##### FORMAT INTEGER, FLOAT AND STRING FEATURES #############
-int_features = ['position', 'MeasureId', 'StateFips', 'ReportYear', 'MonitorOnly']
-float_features = ['Value']
-string_features = ["sid", "id", "MeasureName", "StratificationLevel", "StateName", "CountyName","Unit","UnitName", "DataOrigin"]
+#################### FEATURE DATA TYPE FORMATING (INTEGER, STRING, FLOAT)) #####################
+# Integer
+def format_integer_features(data_frame, int_features):
+    for feature in int_features:
+        data_frame = data_frame.astype({feature: int})
+    print("Integer features formated in integer format.")
+    return data_frame
 
-def format_integer_features(df, features):
+
+# Float
+def format_float_features(data_frame, float_features):
     for feature in float_features:
-        df = df.astype({feature: int})
-    return df
+        data_frame = data_frame.astype({feature: float})
+    print("Float features formated in float format.")
+    return data_frame
 
 
-def format_float_features(df, features):
-    for feature in float_features:
-        df = df.astype({feature: float})
-    return df
+# String
+def format_string_features(data_frame, string_features):
+    for feature in string_features:
+        data_frame = data_frame.astype({feature: str})
+    print("Textual features formated in string format.")
+    return data_frame
 
 
-def format_string_features(df, features):
-    for feature in float_features:
-        df = df.astype({feature: str})
-    return df
 ##################################################################################################
 #################################### LOAD DATA ###################################################
 ##################################################################################################
@@ -139,9 +150,31 @@ def load_dataframe_in_DB(df_data):
 #################################### RUN FUNCTIONS ###############################################
 ##################################################################################################
 def run_all_functions(file):
+    date_features = ["created_at", "updated_at"]
+    int_features = ["position", "MeasureId", "StateFips", "ReportYear", "MonitorOnly"]
+    float_features = ["Value"]
+    string_features = [
+        "sid",
+        "id",
+        "MeasureName",
+        "StratificationLevel",
+        "StateName",
+        "CountyName",
+        "Unit",
+        "UnitName",
+        "DataOrigin",
+    ]
+
     read_file = reading_file(file)
     transformed_data = transform_to_Dataframe(read_file)
-#    load_dataframe_in_DB(transformed_data)
+    reduced_data_df = drop_columns_with_missing_values(transformed_data, 50)
+    format_date = format_date_features(reduced_data_df, date_features)
+    format_date = split_date_feature(format_date, date_features)
+    # format_data = format_integer_features(format_date, int_features)
+    format_data = format_float_features(format_date, float_features)
+    format_data = format_string_features(format_data, string_features)
+    load_dataframe_in_DB(format_data)
+    print("Ingest process end!")
 
 
 run_all_functions("rows.json")
