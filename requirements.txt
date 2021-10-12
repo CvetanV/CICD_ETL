@@ -1,9 +1,3 @@
-pandas
 pylint
 pytest
 black
-click
-pytest-cov
-sqlalchemy
-python - json - logger
-psycopg2
