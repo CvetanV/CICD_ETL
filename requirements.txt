@@ -5,3 +5,4 @@ pandas
 pytest-cov
 click
 sqlalchemy
+psycopg2
