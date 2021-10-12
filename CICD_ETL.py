@@ -151,7 +151,7 @@ def load_dataframe_in_DB(df_data):
 ##################################################################################################
 def run_all_functions(file):
     date_features = ["created_at", "updated_at"]
-    int_features = ["position", "MeasureId", "StateFips", "ReportYear", "MonitorOnly"]
+#    int_features = ["position", "MeasureId", "StateFips", "ReportYear", "MonitorOnly"]
     float_features = ["Value"]
     string_features = [
         "sid",
