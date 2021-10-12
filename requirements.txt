@@ -1,9 +1,9 @@
-pandas==1.2.3
-pylint==2.7.2
-pytest==6.2.2
-black==20.8b1
-click==7.1.2
-pytest-cov==2.11.1
-sqlalchemy==1.4.25
+pytest
+click
+pylint
+pytest-cov
+pandas
+sqlalchemy
 python - json - logger
-psycopg2==2.9.1
+psycopg2
+black
