@@ -6,4 +6,3 @@ pandas
 sqlalchemy
 psycopg2
 black
-json
