@@ -6,6 +6,6 @@ format:
 #test:
 #	python -m pytest -vv --cov=hello test_cicd_etl.py
 lint:
-	pylint --disable=R,C CICD_ETL.py
+	pylint --disable=R,C cicd_etl.py
 
 all: install lint format
