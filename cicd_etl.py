@@ -23,7 +23,7 @@ def reading_file(file):
 ##################################################################################################
 #################################### TRANSFORM DATA ##############################################
 ##################################################################################################
-def transform_to_Dataframe(read_file):
+def transform_to_dataframe(read_file):
     # declare empty metadata list
     metadata = []
     reading_metadata = read_file["meta"]["view"]["columns"]
@@ -43,8 +43,8 @@ def transform_to_Dataframe(read_file):
     # declare empty data list
     data = []
     read_data = read_file["data"]
-    for d in read_data:
-        data.append(d)  # populate the empty data list
+    for element in read_data:
+        data.append(element)  # populate the empty data list
 
     # transform list to pandas dataframe
     df_data = pd.DataFrame(data)
@@ -65,8 +65,7 @@ def transform_to_Dataframe(read_file):
 # Optional function to drop features with missing values that takes as input the dataframe and
 # a threshold value from 0% to 100%
 def columns_with_missing_values(dataf, threshold):
-    l = []
-    l = list(
+    nan_columns = list(
         dataf.drop(
             dataf.loc[
                 :, list((100 * (dataf.isnull().sum() / len(dataf.index)) >= threshold))
@@ -76,14 +75,15 @@ def columns_with_missing_values(dataf, threshold):
     )
     print(
         "Number of columns having %s percent or more missing values: " % threshold,
-        (dataf.shape[1] - len(l)),
+        (dataf.shape[1] - len(nan_columns)),
     )
-    print("Dropped columns:", list(set(list((dataf.columns.values))) - set(l)))
-    return l
+    print("Dropped columns:", list(set(list((dataf.columns.values))) - set(nan_columns)))
+    return nan_columns
 
-def drop_columns_with_missing_values(df, threshold):
-    remaining_columns = columns_with_missing_values(df, threshold)
-    non_nan_df = df[remaining_columns]
+
+def drop_columns_with_missing_values(dataframe, threshold):
+    remaining_columns = columns_with_missing_values(dataframe, threshold)
+    non_nan_df = dataframe[remaining_columns]
     non_nan_df = pd.DataFrame(non_nan_df)
     print("Shape of the reduced dataframe", non_nan_df.shape)
     return non_nan_df
@@ -139,11 +139,12 @@ def format_string_features(data_frame, string_features):
 ##################################################################################################
 #################################### LOAD DATA ###################################################
 ##################################################################################################
-def load_dataframe_in_DB(df_data):
+def load_dataframe_in_db(df_data):
     print("Starting loading data into a postgre database...")
     engine = create_engine("postgresql://postgres:pass@localhost:5432/postgres")
     df_data.to_sql("docebo_ex_tab", engine, if_exists="append")
     print("Data loaded into a postgre database!")
+    return 1
 
 
 ##################################################################################################
@@ -151,7 +152,7 @@ def load_dataframe_in_DB(df_data):
 ##################################################################################################
 def run_all_functions(file):
     date_features = ["created_at", "updated_at"]
-#    int_features = ["position", "MeasureId", "StateFips", "ReportYear", "MonitorOnly"]
+    #    int_features = ["position", "MeasureId", "StateFips", "ReportYear", "MonitorOnly"]
     float_features = ["Value"]
     string_features = [
         "sid",
@@ -166,14 +167,14 @@ def run_all_functions(file):
     ]
 
     read_file = reading_file(file)
-    transformed_data = transform_to_Dataframe(read_file)
+    transformed_data = transform_to_dataframe(read_file)
     reduced_data_df = drop_columns_with_missing_values(transformed_data, 50)
     format_date = format_date_features(reduced_data_df, date_features)
     format_date = split_date_feature(format_date, date_features)
     # format_data = format_integer_features(format_date, int_features)
     format_data = format_float_features(format_date, float_features)
     format_data = format_string_features(format_data, string_features)
-    load_dataframe_in_DB(format_data)
+    load_dataframe_in_db(format_data)
     print("Ingest process end!")
 
 
