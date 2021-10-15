@@ -69,7 +69,13 @@ def columns_with_missing_values(dataframe, threshold):
     nan_columns = list(
         dataframe.drop(
             dataframe.loc[
-                :, list((100 * (dataframe.isnull().sum() / len(dataframe.index)) >= threshold))
+                :,
+                list(
+                    (
+                        100 * (dataframe.isnull().sum() / len(dataframe.index))
+                        >= threshold
+                    )
+                ),
             ].columns,
             1,
         ).columns.values
@@ -78,7 +84,9 @@ def columns_with_missing_values(dataframe, threshold):
         "Number of columns having %s percent or more missing values: " % threshold,
         (dataframe.shape[1] - len(nan_columns)),
     )
-    print("Dropped columns:", list(set(list(dataframe.columns.values)) - set(nan_columns)))
+    print(
+        "Dropped columns:", list(set(list(dataframe.columns.values)) - set(nan_columns))
+    )
     return nan_columns
 
 
