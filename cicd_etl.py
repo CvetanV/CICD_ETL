@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from sqlalchemy import create_engine
 
+
 ##################################################################################################
 #################################### EXTRACT DATA ################################################
 ##################################################################################################
@@ -64,20 +65,20 @@ def transform_to_dataframe(read_file):
 ################################# MISSING VALUES MANAGEMENT ######################################
 # Optional function to drop features with missing values that takes as input the dataframe and
 # a threshold value from 0% to 100%
-def columns_with_missing_values(dataf, threshold):
+def columns_with_missing_values(dataframe, threshold):
     nan_columns = list(
-        dataf.drop(
-            dataf.loc[
-                :, list((100 * (dataf.isnull().sum() / len(dataf.index)) >= threshold))
+        dataframe.drop(
+            dataframe.loc[
+                :, list((100 * (dataframe.isnull().sum() / len(dataframe.index)) >= threshold))
             ].columns,
             1,
         ).columns.values
     )
     print(
         "Number of columns having %s percent or more missing values: " % threshold,
-        (dataf.shape[1] - len(nan_columns)),
+        (dataframe.shape[1] - len(nan_columns)),
     )
-    print("Dropped columns:", list(set(list((dataf.columns.values))) - set(nan_columns)))
+    print("Dropped columns:", list(set(list(dataframe.columns.values)) - set(nan_columns)))
     return nan_columns
 
 
@@ -89,12 +90,12 @@ def drop_columns_with_missing_values(dataframe, threshold):
     return non_nan_df
 
 
-################################ FORMATING DATE FEATURE ########################################
+################################ FORMATTING DATE FEATURE ########################################
 def format_date_features(data_frame, date_features):
     features = date_features
     for feature in features:
         data_frame[feature] = pd.to_datetime(data_frame[feature], unit="s")
-    print("Date feature formated in human readable format.")
+    print("Date feature formatted in human readable format.")
     return data_frame
 
 
@@ -111,12 +112,12 @@ def split_date_feature(data_frame, date_features):
     return data_frame
 
 
-#################### FEATURE DATA TYPE FORMATING (INTEGER, STRING, FLOAT)) #####################
+#################### FEATURE DATA TYPE FORMATTING (INTEGER, STRING, FLOAT)) #####################
 # Integer
 def format_integer_features(data_frame, int_features):
     for feature in int_features:
         data_frame = data_frame.astype({feature: int})
-    print("Integer features formated in integer format.")
+    print("Integer features formatted in integer format.")
     return data_frame
 
 
@@ -124,7 +125,7 @@ def format_integer_features(data_frame, int_features):
 def format_float_features(data_frame, float_features):
     for feature in float_features:
         data_frame = data_frame.astype({feature: float})
-    print("Float features formated in float format.")
+    print("Float features formatted in float format.")
     return data_frame
 
 
@@ -132,7 +133,7 @@ def format_float_features(data_frame, float_features):
 def format_string_features(data_frame, string_features):
     for feature in string_features:
         data_frame = data_frame.astype({feature: str})
-    print("Textual features formated in string format.")
+    print("Textual features formatted in string format.")
     return data_frame
 
 
