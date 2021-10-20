@@ -8,7 +8,7 @@ from cicd_etl import split_date_feature
 #from cicd_etl import format_integer_features
 #from cicd_etl import format_float_features
 #from cicd_etl import format_string_features
-#from cicd_etl import load_dataframe_in_db
+from cicd_etl import load_dataframe_in_db
 
 
 def test_reading_file():
@@ -67,4 +67,7 @@ def test_split_date_feature():
 
 #def test_format_string_features():
 
-#def test_load_dataframe_in_DB():
+def test_load_dataframe_in_db():
+    expected = 1
+    input_data_frame = pd.DataFrame({'created_at': ["2015-08-12"]}, index=['1'])
+    assert expected == load_dataframe_in_db(input_data_frame, "test")

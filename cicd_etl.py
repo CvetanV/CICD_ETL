@@ -148,10 +148,10 @@ def format_string_features(data_frame, string_features):
 ##################################################################################################
 #################################### LOAD DATA ###################################################
 ##################################################################################################
-def load_dataframe_in_db(df_data):
+def load_dataframe_in_db(df_data, table):
     print("Starting loading data into a postgre database...")
     engine = create_engine("postgresql://postgres:pass@localhost:5432/postgres")
-    df_data.to_sql("docebo_ex_tab", engine, if_exists="append")
+    df_data.to_sql(table, engine, if_exists="append")
     print("Data loaded into a postgre database!")
     return 1
 
@@ -183,7 +183,7 @@ def run_all_functions(file):
     # format_data = format_integer_features(format_date, int_features)
     format_data = format_float_features(format_date, float_features)
     format_data = format_string_features(format_data, string_features)
-    load_dataframe_in_db(format_data)
+    load_dataframe_in_db(format_data, "docebo_ex_tab")
     print("Ingest process end!")
 
 
