@@ -155,6 +155,15 @@ def load_dataframe_in_db(df_data, table):
     print("Data loaded into a postgre database!")
     return 1
 
+def load_dataframe_in_MySQLDB(dataframe, db_table, ifexists):
+    print("Starting loading data into a postgre database...")
+    #engine = create_engine('mysql://<user>:<password>@<host>/<database>?charset=utf8')
+    engine = create_engine('mysql://admin:password@database-2.cmenuehd1vd4.us-east-2.rds.amazonaws.com/testDB?charset=utf8')
+
+    dataframe.to_sql(db_table,con=engine, if_exists=ifexists, index=False)
+    print("Data loaded into a MySQL database!")
+    return 1
+
 
 ##################################################################################################
 #################################### RUN FUNCTIONS ###############################################
@@ -183,8 +192,9 @@ def run_all_functions(file):
     # format_data = format_integer_features(format_date, int_features)
     format_data = format_float_features(format_date, float_features)
     format_data = format_string_features(format_data, string_features)
-    load_dataframe_in_db(format_data, "docebo_ex_tab")
+    #load_dataframe_in_db(format_data, "docebo_ex_tab")
+    load_dataframe_in_MySQLDB(format_data, 'testtable', 'append')
     print("Ingest process end!")
 
 
-run_all_functions("rows.json")
+run_all_functions("rowssmall.json")
