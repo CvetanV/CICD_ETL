@@ -1,0 +1,998 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "cjae-szjv",
+      "name" : "Air Quality Measures on the National Environmental Health Tracking Network",
+      "assetType" : "dataset",
+      "averageRating" : 0,
+      "category" : "Environmental Health & Toxicology",
+      "createdAt" : 1439381433,
+      "description" : "The Environmental Protection Agency (EPA) provides air pollution data about ozone and particulate matter (PM2.5) to CDC for the Tracking Network. The EPA maintains a database called the Air Quality System (AQS) which contains data from approximately 4,000 monitoring stations around the country, mainly in urban areas. Data from the AQS is considered the \"gold standard\" for determining outdoor air pollution. However, AQS data are limited because the monitoring stations are usually in urban areas or cities and because they only take air samples for some air pollutants every three days or during times of the year when air pollution is very high. CDC and EPA have worked together to develop a statistical model (Downscaler) to make modeled predictions available for environmental public health tracking purposes in areas of the country that do not have monitors and to fill in the time gaps when monitors may not be recording data. This data does not include \"Percent of population in counties exceeding NAAQS (vs. population in counties that either meet the standard or do not monitor PM2.5)\". Please visit the Tracking homepage for this information.View additional information for indicator definitions and documentation by selecting Content Area \"Air Quality\" and the respective indicator at the following website: http://ephtracking.cdc.gov/showIndicatorsData.action",
+      "displayType" : "table",
+      "downloadCount" : 33390,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1528204279,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 12801487,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1439474950,
+      "publicationGroup" : 3957835,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1439402317,
+      "rowsUpdatedBy" : "94g5-7as2",
+      "tableId" : 3960642,
+      "totalTimesRated" : 0,
+      "viewCount" : 6045,
+      "viewLastModified" : 1528203875,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1439474950,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 740421,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1439474950,
+        "workflowId" : 2100,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "94g5-7as2",
+          "displayName" : "Tracking"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 217182091,
+        "name" : "MeasureId",
+        "dataTypeName" : "number",
+        "description" : "Unique identifier for Measure Name used within the Environmental Health Tracking Network",
+        "fieldName" : "measureid",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 30482153,
+        "width" : 138,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "average" : "248.4369794406202",
+          "largest" : "296",
+          "null" : 0,
+          "top" : [ {
+            "item" : "83",
+            "count" : 20
+          }, {
+            "item" : "84",
+            "count" : 19
+          }, {
+            "item" : "85",
+            "count" : 18
+          }, {
+            "item" : "86",
+            "count" : 17
+          }, {
+            "item" : "87",
+            "count" : 16
+          }, {
+            "item" : "292",
+            "count" : 15
+          }, {
+            "item" : "293",
+            "count" : 14
+          }, {
+            "item" : "294",
+            "count" : 13
+          }, {
+            "item" : "295",
+            "count" : 12
+          }, {
+            "item" : "296",
+            "count" : 11
+          } ],
+          "smallest" : "83",
+          "sum" : "54317019"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 217182092,
+        "name" : "MeasureName",
+        "dataTypeName" : "text",
+        "description" : "Unique name created by National Environmental Health Tracking Network to identify and clearly describe data presented",
+        "fieldName" : "measurename",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482154,
+        "width" : 232,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "Person-days with PM2.5 over the National Ambient Air Quality Standard",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+            "count" : 20
+          }, {
+            "item" : "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+            "count" : 19
+          }, {
+            "item" : "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)",
+            "count" : 18
+          }, {
+            "item" : "Person-days with PM2.5 over the National Ambient Air Quality Standard",
+            "count" : 17
+          }, {
+            "item" : "Annual average ambient concentrations of PM2.5 in micrograms per cubic meter (based on seasonal averages and daily measurement)",
+            "count" : 16
+          }, {
+            "item" : "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
+            "count" : 15
+          }, {
+            "item" : "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
+            "count" : 14
+          }, {
+            "item" : "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (monitor and modeled data)",
+            "count" : 13
+          }, {
+            "item" : "Number of person-days with PM2.5 over the National Ambient Air Quality Standard (monitor and modeled data)",
+            "count" : 12
+          }, {
+            "item" : "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+            "count" : 11
+          } ],
+          "smallest" : "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182093,
+        "name" : "MeasureType",
+        "dataTypeName" : "text",
+        "description" : "Type of data value being captured (e.g. Average, Count, Prevalence, etc.)",
+        "fieldName" : "measuretype",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482155,
+        "width" : 151,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "Percent",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Counts",
+            "count" : 20
+          }, {
+            "item" : "Percent",
+            "count" : 19
+          }, {
+            "item" : "Average",
+            "count" : 18
+          } ],
+          "smallest" : "Average"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182094,
+        "name" : "StratificationLevel",
+        "dataTypeName" : "text",
+        "description" : "Geogrpahic resolution by which data is captured and presented",
+        "fieldName" : "stratificationlevel",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482156,
+        "width" : 192,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "State x County",
+          "null" : 0,
+          "top" : [ {
+            "item" : "State x County",
+            "count" : 20
+          } ],
+          "smallest" : "State x County"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182095,
+        "name" : "StateFips",
+        "dataTypeName" : "text",
+        "description" : "Unique two-digit numeric code assigned to each state in the United States.",
+        "fieldName" : "statefips",
+        "position" : 5,
+        "rdfProperties" : "",
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482157,
+        "width" : 131,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "9",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1",
+            "count" : 20
+          }, {
+            "item" : "6",
+            "count" : 19
+          }, {
+            "item" : "8",
+            "count" : 18
+          }, {
+            "item" : "12",
+            "count" : 17
+          }, {
+            "item" : "13",
+            "count" : 16
+          }, {
+            "item" : "17",
+            "count" : 15
+          }, {
+            "item" : "18",
+            "count" : 14
+          }, {
+            "item" : "19",
+            "count" : 13
+          }, {
+            "item" : "21",
+            "count" : 12
+          }, {
+            "item" : "22",
+            "count" : 11
+          }, {
+            "item" : "26",
+            "count" : 10
+          }, {
+            "item" : "27",
+            "count" : 9
+          }, {
+            "item" : "28",
+            "count" : 8
+          }, {
+            "item" : "36",
+            "count" : 7
+          }, {
+            "item" : "37",
+            "count" : 6
+          }, {
+            "item" : "39",
+            "count" : 5
+          }, {
+            "item" : "40",
+            "count" : 4
+          }, {
+            "item" : "42",
+            "count" : 3
+          }, {
+            "item" : "45",
+            "count" : 2
+          }, {
+            "item" : "47",
+            "count" : 1
+          } ],
+          "smallest" : "1"
+        },
+        "format" : {
+          "rdf" : "",
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182096,
+        "name" : "StateName",
+        "dataTypeName" : "text",
+        "description" : "Name of state in the United States.",
+        "fieldName" : "statename",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482158,
+        "width" : 130,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "Wyoming",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Alabama",
+            "count" : 20
+          }, {
+            "item" : "California",
+            "count" : 19
+          }, {
+            "item" : "Colorado",
+            "count" : 18
+          }, {
+            "item" : "Florida",
+            "count" : 17
+          }, {
+            "item" : "Georgia",
+            "count" : 16
+          }, {
+            "item" : "Illinois",
+            "count" : 15
+          }, {
+            "item" : "Indiana",
+            "count" : 14
+          }, {
+            "item" : "Iowa",
+            "count" : 13
+          }, {
+            "item" : "Kentucky",
+            "count" : 12
+          }, {
+            "item" : "Louisiana",
+            "count" : 11
+          }, {
+            "item" : "Michigan",
+            "count" : 10
+          }, {
+            "item" : "Minnesota",
+            "count" : 9
+          }, {
+            "item" : "Mississippi",
+            "count" : 8
+          }, {
+            "item" : "New York",
+            "count" : 7
+          }, {
+            "item" : "North Carolina",
+            "count" : 6
+          }, {
+            "item" : "Ohio",
+            "count" : 5
+          }, {
+            "item" : "Oklahoma",
+            "count" : 4
+          }, {
+            "item" : "Pennsylvania",
+            "count" : 3
+          }, {
+            "item" : "South Carolina",
+            "count" : 2
+          }, {
+            "item" : "Tennessee",
+            "count" : 1
+          } ],
+          "smallest" : "Alabama"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182097,
+        "name" : "CountyFips",
+        "dataTypeName" : "text",
+        "description" : "Unique five-digit code assigned to each county in the United States. The first two digits are the state FIPS code and the last three digits correspond to the county within that state.",
+        "fieldName" : "countyfips",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482159,
+        "width" : 140,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "9015",
+          "null" : 0,
+          "top" : [ {
+            "item" : "56035",
+            "count" : 20
+          }, {
+            "item" : "56037",
+            "count" : 19
+          }, {
+            "item" : "56039",
+            "count" : 18
+          }, {
+            "item" : "56041",
+            "count" : 17
+          }, {
+            "item" : "56043",
+            "count" : 16
+          }, {
+            "item" : "56045",
+            "count" : 15
+          } ],
+          "smallest" : "10001"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182098,
+        "name" : "CountyName",
+        "dataTypeName" : "text",
+        "description" : "Name of county within the state",
+        "fieldName" : "countyname",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482160,
+        "width" : 151,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "Ziebach",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Sublette",
+            "count" : 20
+          }, {
+            "item" : "Sweetwater",
+            "count" : 19
+          }, {
+            "item" : "Teton",
+            "count" : 18
+          }, {
+            "item" : "Uinta",
+            "count" : 17
+          }, {
+            "item" : "Washakie",
+            "count" : 16
+          }, {
+            "item" : "Weston",
+            "count" : 15
+          } ],
+          "smallest" : "Abbeville"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182099,
+        "name" : "ReportYear",
+        "dataTypeName" : "text",
+        "description" : "Data report year",
+        "fieldName" : "reportyear",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482161,
+        "width" : 143,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "2013",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1999",
+            "count" : 20
+          }, {
+            "item" : "2000",
+            "count" : 19
+          }, {
+            "item" : "2001",
+            "count" : 18
+          }, {
+            "item" : "2002",
+            "count" : 17
+          }, {
+            "item" : "2003",
+            "count" : 16
+          }, {
+            "item" : "2004",
+            "count" : 15
+          }, {
+            "item" : "2005",
+            "count" : 14
+          }, {
+            "item" : "2006",
+            "count" : 13
+          }, {
+            "item" : "2007",
+            "count" : 12
+          }, {
+            "item" : "2008",
+            "count" : 11
+          }, {
+            "item" : "2009",
+            "count" : 10
+          }, {
+            "item" : "2010",
+            "count" : 9
+          }, {
+            "item" : "2011",
+            "count" : 8
+          }, {
+            "item" : "2012",
+            "count" : 7
+          }, {
+            "item" : "2013",
+            "count" : 6
+          } ],
+          "smallest" : "1999"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182100,
+        "name" : "Value",
+        "dataTypeName" : "number",
+        "description" : "Data value specific to data measure in the stratified geography",
+        "fieldName" : "value",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 30482162,
+        "width" : 110,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "average" : "649964.9118505982",
+          "largest" : "1084153095",
+          "null" : 0,
+          "top" : [ {
+            "item" : "0",
+            "count" : 20
+          }, {
+            "item" : "1",
+            "count" : 19
+          }, {
+            "item" : "0.27397260273972601",
+            "count" : 18
+          }, {
+            "item" : "0.54794520547945202",
+            "count" : 17
+          }, {
+            "item" : "7.9151719205479401",
+            "count" : 16
+          }, {
+            "item" : "6.1315808356164396",
+            "count" : 15
+          }, {
+            "item" : "6.9196157205479496",
+            "count" : 14
+          }, {
+            "item" : "6.3236561366120299",
+            "count" : 13
+          }, {
+            "item" : "6.1095928054794504",
+            "count" : 12
+          }, {
+            "item" : "6.4436848054794504",
+            "count" : 11
+          }, {
+            "item" : "6.2071264410958902",
+            "count" : 10
+          }, {
+            "item" : "6.3697641557377098",
+            "count" : 9
+          }, {
+            "item" : "6.24170825753425",
+            "count" : 8
+          }, {
+            "item" : "6.1259572876712296",
+            "count" : 7
+          }, {
+            "item" : "6.6464644109588997",
+            "count" : 6
+          } ],
+          "smallest" : "0",
+          "sum" : "142105078502.45554529049610238"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 217182101,
+        "name" : "Unit",
+        "dataTypeName" : "text",
+        "description" : "Shorthand unit name for the specific measure",
+        "fieldName" : "unit",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482163,
+        "width" : 103,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "No Units",
+          "null" : 0,
+          "top" : [ {
+            "item" : "No Units",
+            "count" : 20
+          }, {
+            "item" : "%",
+            "count" : 19
+          }, {
+            "item" : "µg/m³",
+            "count" : 18
+          } ],
+          "smallest" : "%"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182102,
+        "name" : "UnitName",
+        "dataTypeName" : "text",
+        "description" : "Long unit name for the specific measure",
+        "fieldName" : "unitname",
+        "position" : 12,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482164,
+        "width" : 135,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "Percent",
+          "null" : 0,
+          "top" : [ {
+            "item" : "No Units",
+            "count" : 20
+          }, {
+            "item" : "Percent",
+            "count" : 19
+          }, {
+            "item" : "Micograms per cubic meter",
+            "count" : 18
+          } ],
+          "smallest" : "Micograms per cubic meter"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182103,
+        "name" : "DataOrigin",
+        "dataTypeName" : "text",
+        "description" : "Indicates if the data is monitor only (AQS data), or if it is monitor and modeled (with Downscaler modeled predictions for counties and days without monitoring data)",
+        "fieldName" : "dataorigin",
+        "position" : 13,
+        "renderTypeName" : "text",
+        "tableColumnId" : 30482165,
+        "width" : 137,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "largest" : "Monitor Only",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Monitor Only",
+            "count" : 20
+          }, {
+            "item" : "Monitor & Modeled",
+            "count" : 19
+          } ],
+          "smallest" : "Monitor & Modeled"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 217182104,
+        "name" : "MonitorOnly",
+        "dataTypeName" : "number",
+        "description" : "Flags if data is Monitor only, compared to monitor and modeled data.",
+        "fieldName" : "monitoronly",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 30482166,
+        "width" : 149,
+        "cachedContents" : {
+          "non_null" : 218635,
+          "average" : "0.3839504196491870",
+          "largest" : "1",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1",
+            "count" : 20
+          }, {
+            "item" : "0",
+            "count" : 19
+          } ],
+          "smallest" : "0",
+          "sum" : "83945"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "jsonQuery" : {
+          "order" : [ {
+            "ascending" : true,
+            "columnFieldName" : "statefips"
+          } ]
+        },
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "custom_fields" : {
+          "Common Core" : {
+            "Contact Email" : "cak8@cdc.gov",
+            "Homepage" : "http://ephtracking.cdc.gov/",
+            "Language" : "English",
+            "Contact Name" : "Craig Kassinger",
+            "Update Frequency" : "irregular",
+            "Program Code" : "009:032",
+            "Publisher" : "Environmental Health Tracking Network",
+            "Is Quality Data" : "yes",
+            "Bureau Code" : "009:20"
+          }
+        },
+        "rowIdentifier" : "0",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rowLabel" : "Observation",
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "94g5-7as2",
+        "displayName" : "Tracking",
+        "screenName" : "Tracking",
+        "type" : "interactive",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "query" : {
+        "orderBys" : [ {
+          "ascending" : true,
+          "expression" : {
+            "columnId" : 217182095,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "94g5-7as2",
+        "displayName" : "Tracking",
+        "screenName" : "Tracking",
+        "type" : "interactive",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "environmental hazard", "air quality", "air quality system", "daily maximum 8 hour average concentration", "daily 24 hour average concentration", "hourly observations", "site monitoring data", "regulatory resources", "national ambient air quality standards", "caa 109: clean air act section 109", "o3", "ozone - residual", "ozone residual", "ozone", "pm2.5", "particulate matter", "particulate matter < 2.5 um", "pm fine 0-2.5 um stp", "pm2.5 - local conditions", "particulate matter - pm2.5", "air pollution", "air quality index", "oxygen", "particle pollution", "environmental health", "tracking", "tracking network", "national environmental health tracking network", "tracking program" ],
+      "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-8eh8_xxkx-u3mq", "00000000-0000-0000-A1B7-70E47BCE5354", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1027", "Clay", "1999", "33", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-u2v5_78j5-pxk4", "00000000-0000-0000-260A-99DE31733069", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1051", "Elmore", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-68zj_7qfn-sxwu", "00000000-0000-0000-AA6F-0AA88BE0BC18", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1073", "Jefferson", "1999", "39", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-8b4d~zt5j~dajj", "00000000-0000-0000-99C8-B554EED81E1A", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1079", "Lawrence", "1999", "28", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-5gee.63td_z6ep", "00000000-0000-0000-C5A5-317A29365102", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1089", "Madison", "1999", "31", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-tzyx.ssxh_pzu7", "00000000-0000-0000-EC62-A1384F0CA520", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1097", "Mobile", "1999", "32", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-3yj2_u42c_mrn5", "00000000-0000-0000-0117-41785A45172B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1101", "Montgomery", "1999", "15", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-va7z.p2v8.7pet", "00000000-0000-0000-4CAB-AF127851211E", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1117", "Shelby", "1999", "45", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-r7kk_e3dm-z22z", "00000000-0000-0000-B536-48BC9313E20F", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1119", "Sumter", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-bnrc~w34s-4a5p", "00000000-0000-0000-6D01-2E3FFA03443C", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "2", "Alaska", "2068", "Denali", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ezrk~m5dc_5nx7", "00000000-0000-0000-6EF1-BC540391ACDA", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4003", "Cochise", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-nyya.dvnz~c6rx", "00000000-0000-0000-C2F1-F20AC8960922", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4005", "Coconino", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-dq3i_wt6d_c6xk", "00000000-0000-0000-634D-161FDE215C27", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4007", "Gila", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-u6rc-k3mf-cn79", "00000000-0000-0000-23E8-D7CA5D3D66B0", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4013", "Maricopa", "1999", "85", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-t9c6-4d4b_r62h", "00000000-0000-0000-0147-C81E01794209", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4019", "Pima", "1999", "2", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-vq6r~mxzj-e65z", "00000000-0000-0000-D8C7-9D309A1D7831", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4025", "Yavapai", "1999", "13", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-vxqn-mrpc~5bt8", "00000000-0000-0000-2EEC-62A590692422", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4027", "Yuma", "1999", "6", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-3akn_5nzm~8v7v", "00000000-0000-0000-8FF0-E14DEBBF1617", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5035", "Crittenden", "1999", "30", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ugxn~bhax.a2tj", "00000000-0000-0000-78B8-ABD2F8BE67E8", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5097", "Montgomery", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ieav.mdz9-m8a4", "00000000-0000-0000-78DB-6B00BD0011E9", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5101", "Newton", "1999", "8", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-itqe.js5p-m5qh", "00000000-0000-0000-6224-0D173BC0742C", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5119", "Pulaski", "1999", "15", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-gpgp_srzu_usue", "00000000-0000-0000-613B-E1BD3877BE25", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6001", "Alameda", "1999", "15", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-dq7i~hg2c-vrek", "00000000-0000-0000-DA0E-4096ADCC746D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6005", "Amador", "1999", "45", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-jgdu_ym2f~p5uk", "00000000-0000-0000-6633-C39391543353", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6007", "Butte", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-epn6~nt6r.v3fu", "00000000-0000-0000-536F-CA85F9761A61", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6009", "Calaveras", "1999", "53", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-cuek~er52.9bdp", "00000000-0000-0000-0AF5-BB9DD3038A25", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6011", "Colusa", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-izbr_eghk-7izp", "00000000-0000-0000-1451-0D84FFF39E36", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6013", "Contra Costa", "1999", "8", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-74t2-dkfw~kdwi", "00000000-0000-0000-5A8F-55679DED890E", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6017", "El Dorado", "1999", "67", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-wsxc-pi24.w5rc", "00000000-0000-0000-1A79-EE440FC57FC1", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6019", "Fresno", "1999", "121", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-iwgd-fhdt-qcmx", "00000000-0000-0000-774D-DABB569D9FE8", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6021", "Glenn", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-fyn4~6kse~du8b", "00000000-0000-0000-341B-7E71246F9F4A", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6025", "Imperial", "1999", "34", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-3xsk.xuea-ci89", "00000000-0000-0000-0E63-87EDAEADABCD", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6027", "Inyo", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-qhss-fakv.xewr", "00000000-0000-0000-D7ED-455E256447C2", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6029", "Kern", "1999", "129", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-zunr.4c3y.j3wx", "00000000-0000-0000-BCA9-215B5A1FDAEE", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6031", "Kings", "1999", "68", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-edw4.637q-ur8k", "00000000-0000-0000-DB01-E66413ADB7D8", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6037", "Los Angeles", "1999", "42", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-acuq-yuez_ch7b", "00000000-0000-0000-D20A-43814963CB8D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6039", "Madera", "1999", "29", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-vi3i.xk9e_mv9w", "00000000-0000-0000-8609-6ED1694B1130", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6041", "Marin", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-fe4k.f8d2_yefj", "00000000-0000-0000-109B-C815BE5D5A08", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6043", "Mariposa", "1999", "67", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-dqy2~8i8y.iyin", "00000000-0000-0000-E1E6-F18178B6757A", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6047", "Merced", "1999", "77", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-pefd.8vkg_6j7s", "00000000-0000-0000-72AD-EF4B08B97573", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6053", "Monterey", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-3e6m.35m8.nrhg", "00000000-0000-0000-3CF8-4877D9C06A89", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6055", "Napa", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-2k5m_h6qe_jbpu", "00000000-0000-0000-11AB-52CA467C8D86", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6057", "Nevada", "1999", "69", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-y755.f99m~5wq7", "00000000-0000-0000-A67F-B9878E94E6EB", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6059", "Orange", "1999", "6", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-whpi.yamf.2dab", "00000000-0000-0000-3C66-402CFE48768D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6061", "Placer", "1999", "26", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-wsbm_89z8_7nb7", "00000000-0000-0000-3E34-46E8CF4482B9", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6063", "Plumas", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-sjgg_5u2s~8epa", "00000000-0000-0000-A51A-C9CF4A4807F3", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6065", "Riverside", "1999", "99", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-gb9r.53af_k4cn", "00000000-0000-0000-C3C6-7459A19AB2B8", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6067", "Sacramento", "1999", "51", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-9dm7.tihq.ysc5", "00000000-0000-0000-7938-F3C35D55E03B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6069", "San Benito", "1999", "13", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-sw8z.4ate-4985", "00000000-0000-0000-9B75-CF7BA2D9CD94", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6071", "San Bernardino", "1999", "130", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-zziv.xdnh-rsv4", "00000000-0000-0000-D103-71CF4022F146", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "40", "Oklahoma", "40143", "Tulsa", "1999", "0", "%", "Percent", "Monitor Only", "1" ]
+, [ "row-9ay8.r823-t3i2", "00000000-0000-0000-39EE-FC539F01A6CE", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6073", "San Diego", "1999", "44", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-zt6k~pisv~f3ky", "00000000-0000-0000-E510-9206832E513C", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6075", "San Francisco", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-kyvp_zkci~c8rj", "00000000-0000-0000-E216-250B15E5EF76", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6077", "San Joaquin", "1999", "21", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-jyr4~jhk7~it4k", "00000000-0000-0000-28A0-0BA06D54028B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6079", "San Luis Obispo", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-qsfh-zsvs_qj68", "00000000-0000-0000-4391-BEB453DFB615", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6081", "San Mateo", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-6umh-2r4m.c3yw", "00000000-0000-0000-BC2D-6E18534C1312", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6083", "Santa Barbara", "1999", "12", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-hpzj-wnk4.b4e7", "00000000-0000-0000-662D-DC5C6D517A17", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6085", "Santa Clara", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-dzgs-drqa_aji5", "00000000-0000-0000-DF16-1E83DB241531", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6087", "Santa Cruz", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-5jms.s3ts.mh4i", "00000000-0000-0000-3171-8CF42629EA9C", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6089", "Shasta", "1999", "8", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-b8hm~3j7d_b64a", "00000000-0000-0000-8F9F-AE62D846EBFD", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6095", "Solano", "1999", "12", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-hye5~dm9m-79ag", "00000000-0000-0000-6286-BB7D10022BAD", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6097", "Sonoma", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-qjmh~si3k.ea66", "00000000-0000-0000-4953-37DF6C358895", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6099", "Stanislaus", "1999", "24", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-xib4.uctb.bbgk", "00000000-0000-0000-E64C-C88916B7D04D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6101", "Sutter", "1999", "41", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ir7j.em33_q7gm", "00000000-0000-0000-1C1B-DDE71393C4E3", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6103", "Tehama", "1999", "48", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-fau9.fdur.pahj", "00000000-0000-0000-02F3-1331E4FEE3E7", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6107", "Tulare", "1999", "123", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-kr5j.uue8~n2fz", "00000000-0000-0000-6A89-C8390C6F6BE9", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6109", "Tuolumne", "1999", "75", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-y28e.9dmk.2hqe", "00000000-0000-0000-4A5D-F10086A6FBFB", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6111", "Ventura", "1999", "57", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-jhvz-pkxh~fxbd", "00000000-0000-0000-3DB9-427676776B23", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6113", "Yolo", "1999", "19", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-p5we~5gqf~zdbm", "00000000-0000-0000-E381-1001E2E11F09", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8001", "Adams", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-qnw6-p7w9_khwd", "00000000-0000-0000-97B9-7532EDE27198", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8005", "Arapahoe", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-vkqu~5wmf~w9wv", "00000000-0000-0000-D66D-EBC79AB2DC9D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8013", "Boulder", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-6pp5-s3qh.ir67", "00000000-0000-0000-1C12-BB223AE963AA", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8031", "Denver", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-4478~kynm_hyjv", "00000000-0000-0000-84EF-5F3E1C89BCB1", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8041", "El Paso", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-e4p8~i4ze_sgi3", "00000000-0000-0000-E79F-C717048EE58F", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8059", "Jefferson", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-kkvj_3k7p~a2bk", "00000000-0000-0000-C495-707703275944", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "39", "Ohio", "39151", "Stark", "2013", "0", "%", "Percent", "Monitor Only", "1" ]
+, [ "row-595g-e5c5-23p3", "00000000-0000-0000-A86F-8FBFBAB00C92", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8067", "La Plata", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-73dn~9t4p-24a6", "00000000-0000-0000-1228-95792ADE1309", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8069", "Larimer", "1999", "2", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-huki.mut7_nqeh", "00000000-0000-0000-2595-7ED7E61CE5C2", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8083", "Montezuma", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-hexb_pjnf.hqyz", "00000000-0000-0000-013A-46257F31B587", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "8", "Colorado", "8123", "Weld", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-9b6j_pdpa_9abq", "00000000-0000-0000-D87D-AF2B34328D10", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "9", "Connecticut", "9001", "Fairfield", "1999", "31", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-xxnh.c4c5.9pmq", "00000000-0000-0000-A0D2-077D08A02EA1", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "9", "Connecticut", "9003", "Hartford", "1999", "16", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-y8sk.9j75~c7eg", "00000000-0000-0000-0AAE-B395D4DD9130", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "9", "Connecticut", "9005", "Litchfield", "1999", "24", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-np5a~i9a6.w6en", "00000000-0000-0000-B6B5-90804C16FBFF", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "9", "Connecticut", "9007", "Middlesex", "1999", "20", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-2pfc_wytq-tpmk", "00000000-0000-0000-CEE1-0FAE4651B6DB", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13245", "Richmond", "1999", "34", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-kybs.djgf.58kn", "00000000-0000-0000-CBC6-0806FE18453A", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13247", "Rockdale", "1999", "66", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-6ywp~4u9r_n9mf", "00000000-0000-0000-C4FE-2ACABF9F81EB", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13261", "Sumter", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-dx2s.mjs4-ayri", "00000000-0000-0000-6DD8-B2004783E142", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "15", "Hawaii", "15003", "Honolulu", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-r7yb~ugyn.fdwt", "00000000-0000-0000-C3E4-08414716869E", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "16", "Idaho", "16023", "Butte", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-9aij-8bcp~xts9", "00000000-0000-0000-937A-0FFB8D63DB97", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17001", "Adams", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-pvab-8vjv-pzpi", "00000000-0000-0000-044F-4894A16EF329", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17019", "Champaign", "1999", "23", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-zz3v-h6bg~vd8d", "00000000-0000-0000-A1B5-B606439C2AD4", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17031", "Cook", "1999", "22", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-6eta.acvb_69hx", "00000000-0000-0000-B19A-BC0D476BEF60", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17043", "DuPage", "1999", "2", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-zytc.73ws.qq3y", "00000000-0000-0000-523E-01BB15FD6162", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17049", "Effingham", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-bhht_wy5q~y2iz", "00000000-0000-0000-465D-56D2FC0F7AD7", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17065", "Hamilton", "1999", "8", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-up98.8ua2-9csk", "00000000-0000-0000-7335-567F72631705", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17083", "Jersey", "1999", "23", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-xtxt.qyvm.8drz", "00000000-0000-0000-2345-7C7A8FF28264", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17089", "Kane", "1999", "7", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-rxdx.dvxt~webp", "00000000-0000-0000-36F2-7768E2CB163B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17097", "Lake", "1999", "13", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-frnq_bbwg~3qka", "00000000-0000-0000-38EF-F1699CB585ED", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17111", "McHenry", "1999", "13", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-5jbu-d6mv.esmm", "00000000-0000-0000-46EC-AAEF2B783CF3", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17115", "Macon", "1999", "7", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-n6tk~6d5e.3x4z", "00000000-0000-0000-C77D-10B02C2F979F", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17117", "Macoupin", "1999", "7", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ysg3-kxym~eh48", "00000000-0000-0000-9AEB-F21F023E3DAD", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17119", "Madison", "1999", "27", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-rrt4_fypf.9ptf", "00000000-0000-0000-E1A8-9EC6320646E2", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17143", "Peoria", "1999", "7", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-7v6z_ewru.q2wq", "00000000-0000-0000-3A49-4F744E339C0F", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17157", "Randolph", "1999", "12", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-5wmu_ju5c.jfij", "00000000-0000-0000-FC50-98ED24C9D5F7", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17161", "Rock Island", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-2bet~kpbn-rgck", "00000000-0000-0000-0277-F7D60C87E756", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17163", "St. Clair", "1999", "13", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-44gb-wqvt.d295", "00000000-0000-0000-3F2C-ED57C7143BCE", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17167", "Sangamon", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-e8su~fnb8-tdch", "00000000-0000-0000-8FA1-E5E5E80738A8", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17197", "Will", "1999", "12", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-dujf-pjrd-i9d9", "00000000-0000-0000-8788-CADD6E1CBA55", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "17", "Illinois", "17201", "Winnebago", "1999", "7", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-yhar_26zm-rugz", "00000000-0000-0000-952F-16E47AB79C9E", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18003", "Allen", "1999", "23", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-yn2d_7wsd-qy4y", "00000000-0000-0000-3709-59DB94F34AD1", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18019", "Clark", "1999", "26", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ebvt~rmqm~75ej", "00000000-0000-0000-B166-3B942FA0935F", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18039", "Elkhart", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-jcdg-fgw8-2ui4", "00000000-0000-0000-C673-44046F93B94A", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18043", "Floyd", "1999", "28", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-jiqq~cbbi_zwj4", "00000000-0000-0000-0058-17F5775E938B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18051", "Gibson", "1999", "6", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-krzm~yhmw~wjfm", "00000000-0000-0000-7619-DEF007CEB15C", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18057", "Hamilton", "1999", "36", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-pttb-gca8-i57x", "00000000-0000-0000-B926-98305E7AFBA9", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18059", "Hancock", "1999", "30", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-3fq2.z9v2~3q3g", "00000000-0000-0000-0472-8ABB1BAD4A86", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18081", "Johnson", "1999", "26", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-sgbd-ec6i~nkyr", "00000000-0000-0000-9649-CD56DAC979C4", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18089", "Lake", "1999", "30", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-7j34_qvvm_89kc", "00000000-0000-0000-69D2-454A0A480234", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18091", "LaPorte", "1999", "20", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-aa99~27nx_ptej", "00000000-0000-0000-16BD-7388D7EC6964", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18095", "Madison", "1999", "34", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-yyhs~m6r4.vec2", "00000000-0000-0000-9189-81F09F6EEC64", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18097", "Marion", "1999", "36", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-n6y2~xmj5.a9i7", "00000000-0000-0000-CF49-AEFB58FCF2D6", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18109", "Morgan", "1999", "30", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-gmdb.abxf_s8m5", "00000000-0000-0000-A5B8-2D97B337D3F0", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "18", "Indiana", "18123", "Perry", "1999", "30", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-9rhw.7acv~u78j", "00000000-0000-0000-5C21-2B84341D819E", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "9", "Connecticut", "9009", "New Haven", "1999", "27", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-i8r9~gafc_9s9a", "00000000-0000-0000-118F-AA8957355DBC", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "9", "Connecticut", "9011", "New London", "1999", "20", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-t78r_vvc6~fbi7", "00000000-0000-0000-BC5B-229E1EAD049C", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "9", "Connecticut", "9013", "Tolland", "1999", "20", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ria7~k6xp~urxm", "00000000-0000-0000-EC50-67F117B3328B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "10", "Delaware", "10001", "Kent", "1999", "33", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-x8b2~pgq5.gjpi", "00000000-0000-0000-83A1-1250F5233D56", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "10", "Delaware", "10003", "New Castle", "1999", "35", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-2uzt~be38~8vyc", "00000000-0000-0000-C1C3-15D307AC72AC", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "10", "Delaware", "10005", "Sussex", "1999", "35", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-tnfe-xxbi~tkci", "00000000-0000-0000-98C6-B7B32A7CC50D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "11", "District of Columbia", "11001", "District of Columbia", "1999", "42", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-bbmq~ywic_4yyf", "00000000-0000-0000-C8AB-2E060119FBBC", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12001", "Alachua", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-kqfh.eqe8~93fj", "00000000-0000-0000-ED2D-4E55F7C0556D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12003", "Baker", "1999", "4", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-tv5u~zted.bykd", "00000000-0000-0000-4E7E-BF8C991192A6", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12009", "Brevard", "1999", "6", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-589a_sxvy~kejt", "00000000-0000-0000-95FF-C2AB70E1E157", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12011", "Broward", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-ysiv~7tir~s6ff", "00000000-0000-0000-1184-0620720B0F12", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12031", "Duval", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-83px~qcrt_h3z7", "00000000-0000-0000-EF15-D2FF379B079B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12033", "Escambia", "1999", "26", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-7prq.inhx-ha6c", "00000000-0000-0000-1BA3-A2205C632F5D", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12057", "Hillsborough", "1999", "24", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-mz6p_dbbh~zwhc", "00000000-0000-0000-6DEC-6AD8A9820F71", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12059", "Holmes", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-zbak-mvvs~stm5", "00000000-0000-0000-268F-BC4894F94099", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12071", "Lee", "1999", "7", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-xrk2.e69v_6nri", "00000000-0000-0000-2FCA-A92D706D3A35", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12073", "Leon", "1999", "6", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-z3td_djwc.g6si", "00000000-0000-0000-E020-E78F707BA8E3", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12081", "Manatee", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-quxi.ajf6.tp36", "00000000-0000-0000-3BE9-EBD95413A185", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12083", "Marion", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-6st7-bgs4_sjxu", "00000000-0000-0000-D22B-0807D28B4651", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12086", "Miami-Dade", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-w3ia_6ss7.tfax", "00000000-0000-0000-4A00-43B2D532F4B1", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12095", "Orange", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-78aw_ibhc~ktim", "00000000-0000-0000-C5D0-5DD2AFD373E9", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12097", "Osceola", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-93ve_tkp9-nyff", "00000000-0000-0000-B2DF-16265EABBD25", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12099", "Palm Beach", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-qdei.raa8_qjgi", "00000000-0000-0000-6933-1C36C94252B4", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12101", "Pasco", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-4ubg~6xd5.98ih", "00000000-0000-0000-7FDB-7341FB3AFDFF", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12103", "Pinellas", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-qsjw.w87p_dzqq", "00000000-0000-0000-094B-B982A99CC478", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12105", "Polk", "1999", "9", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-cc68-ir5w~pr9m", "00000000-0000-0000-3718-93D07C7D2403", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12111", "St. Lucie", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-dti6-qtux.4zar", "00000000-0000-0000-7351-183FE06C2EE3", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12115", "Sarasota", "1999", "6", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-k4r4~h6s2.ytyu", "00000000-0000-0000-F054-CED9878FDC94", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12117", "Seminole", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-nw2i~7qqm_2vzf", "00000000-0000-0000-A3D8-FC9E54E749A2", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "12", "Florida", "12127", "Volusia", "1999", "2", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-vnvr_2uq7_syr7", "00000000-0000-0000-B882-871D17CBF658", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13021", "Bibb", "1999", "38", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-8tg4-53cb-2twa", "00000000-0000-0000-4F31-1A8C80D47FCA", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13051", "Chatham", "1999", "11", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-fs5m.mf6e.63tc", "00000000-0000-0000-C23A-15D098B50070", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13085", "Dawson", "1999", "29", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-bqs2_bvpa_mcg6", "00000000-0000-0000-F23B-948148A08044", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13089", "DeKalb", "1999", "53", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-e6hi.edjt.n5i7", "00000000-0000-0000-AC5E-4BBE292361DD", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13097", "Douglas", "1999", "60", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-f6cd.c7fs-tv86", "00000000-0000-0000-0131-6CEF12F32DCB", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13111", "Fannin", "1999", "9", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-v2tf~2wj2_76nu", "00000000-0000-0000-3161-80FF57AF8BBE", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13113", "Fayette", "1999", "53", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-kp9n-zahc.9cr2", "00000000-0000-0000-48F4-FB668CB86D78", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13121", "Fulton", "1999", "76", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-4j6h_y49p-sqn6", "00000000-0000-0000-2634-A888F5B9A7C9", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13127", "Glynn", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-2gvp.gf8g.6rr3", "00000000-0000-0000-AE75-D7C1FE57ABA5", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13135", "Gwinnett", "1999", "45", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-zw52-dzcm~sdg6", "00000000-0000-0000-D395-3480CADA5010", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13215", "Muscogee", "1999", "26", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-fkb7-92hz.47m3", "00000000-0000-0000-C202-55B45B43E40B", 0, 1439382361, null, 1439382361, null, "{ }", "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "13", "Georgia", "13223", "Paulding", "1999", "57", "No Units", "No Units", "Monitor Only", "1" ]
+, [ "row-eerp-uijb_4bdg", "00000000-0000-0000-7339-21CD63CCDFFA", 0, 1439382361, null, 1439382361, null, "{ }", "296", "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)", "Average", "State x County", "56", "Wyoming", "56045", "Weston", "2011", "6.6464644109588997", "µg/m³", "Micograms per cubic meter", "Monitor & Modeled", "0" ]
+ ]
+}
