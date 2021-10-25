@@ -6,4 +6,4 @@ pandas
 sqlalchemy
 mysql-connector
 psycopg2-binary==2.8.6
-#black==21.9b0
+black==21.9b0
