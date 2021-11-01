@@ -1,8 +1,5 @@
 # Import necessary python frameworks
-import json
-import pandas as pd
-from sqlalchemy import create_engine
-
+from import_frameworks import *
 
 ##################################################################################################
 #################################### EXTRACT DATA ################################################
@@ -193,7 +190,7 @@ def run_all_functions(file):
     format_data = format_float_features(format_date, float_features)
     format_data = format_string_features(format_data, string_features)
     #load_dataframe_in_db(format_data, "docebo_ex_tab")
-    load_dataframe_in_MySQLDB(format_data, 'testtable', 'append')
+    #load_dataframe_in_MySQLDB(format_data, 'testtable', 'append')
     print("Ingest process end!")
 
 

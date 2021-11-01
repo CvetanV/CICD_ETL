@@ -67,7 +67,7 @@ def test_split_date_feature():
 
 #def test_format_string_features():
 
-def test_load_dataframe_in_db():
-    expected = 1
-    input_data_frame = pd.DataFrame({'created_at': ["2015-08-12"]}, index=['1'])
-    assert expected == load_dataframe_in_db(input_data_frame, "test")
+#def test_load_dataframe_in_db():
+#    expected = 1
+#    input_data_frame = pd.DataFrame({'created_at': ["2015-08-12"]}, index=['1'])
+#    assert expected == load_dataframe_in_db(input_data_frame, "test")
